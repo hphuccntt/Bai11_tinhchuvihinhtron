@@ -1,17 +1,16 @@
+#define _USE_MATH_DEFINES
 #include <iostream>
 using namespace std;
 int main()
 {
-	cout << "Tinh ban kinh HCN\n";
+	cout << "Tinh ban kinh Hinh Tron\n";
 	double bankinh, pi, chuvi, dientich;
 	cout << "bankinh:"; cin >> bankinh;
-	cout << "ta co pi=3,14:";
-	pi = 3, 14;
 	cout << "chu vi hinh tron:\n";
-	chuvi = 2 * pi * bankinh;
-	dientich = pi * (bankinh * bankinh);
-	cout << "ta co chu vi: " << "2*" << pi << "*" << bankinh << "=" << chuvi << endl;
-	cout << "ta co dien tich: " << pi << "*" << bankinh << "^2" << "=" << dientich << endl;
+	chuvi = 2 * M_PI * bankinh;
+	dientich = M_PI * (bankinh * bankinh);
+	cout << "chu vi: " << chuvi << endl;
+	cout << "dien tich: " << dientich << endl;
 	return 0;
 
 }
